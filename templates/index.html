@@ -1,15 +1,13 @@
 
-{% load static %}
+{% extends 'base.html' %}
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+{% load static %}
+{% block content %}
+
+<body>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="{% static 'css/index_.css' %}">
 <link rel="stylesheet" href="{% static 'css/styles_index.css' %}">
-</head>
-<body>
-<div style="margin-bottom: 100px;text-align: center;">NAVBAR</div>
 <div class="slideshow-container">
 
   <div class="mySlides">
@@ -391,7 +389,5 @@
   </div>
 </div>
 <script src="{% static 'js/index_.js' %}"></script>
-
-
 </body>
-</html> 
+{% endblock %}

@@ -1,0 +1,42 @@
+.logo-logo {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.logo-image {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+}
+.logo-title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.logo-text {
+  color: var(--dl-color-primary-100);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+}
+.logo-text3 {
+  color: var(--dl-color-primary-100);
+  font-size: 10px;
+  font-style: normal;
+  margin-top: 4px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.logo-text6 {
+  color: var(--dl-color-primary-100);
+  font-size: 8px;
+}
+
+@media(max-width: 479px) {
+  .logo-title {
+    display: none;
+  }
+}
