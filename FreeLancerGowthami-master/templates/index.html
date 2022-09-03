@@ -1,0 +1,393 @@
+
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+
+<body>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{% static 'css/index_.css' %}">
+<link rel="stylesheet" href="{% static 'css/styles_index.css' %}">
+<div class="slideshow-container">
+
+  <div class="mySlides">
+    <div class="numbertext">1 / 3</div>
+    <img src="{% static 'media/index/index_1.jpg' %}" style="width:100%">
+    <div class="options">
+      <button class="btn">Join Indian Army</button>
+      <button class="btn">Join Indian Navy</button>
+      <button class="btn">Join Indian Army</button>
+      <button class="btn">Join Indian Navy</button>
+      <button class="btn">Join Indian Army</button>
+      <button class="btn">Join Indian Navy</button>
+    </div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 3</div>
+    <img src="{% static 'media/index/index_2.jpg' %}" style="width:100%">
+    <div class="options">
+      <button class="btn">Join Indian Army</button>
+      <button class="btn">Join Indian Navy</button>
+      <button class="btn">Join Indian Army</button>
+      <button class="btn">Join Indian Navy</button>
+      <button class="btn">Join Indian Army</button>
+      <button class="btn">Join Indian Navy</button>
+    </div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 3</div>
+    <img src="{% static 'media/index/index_3.jpg' %}" style="width:100%">
+    <div class="options">
+      <button class="btn">Join Indian Army</button>
+      <button class="btn">Join Indian Navy</button>
+      <button class="btn">Join Indian Army</button>
+      <button class="btn">Join Indian Navy</button>
+      <button class="btn">Join Indian Army</button>
+      <button class="btn">Join Indian Navy</button>
+    </div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+
+<marquee width="100%" direction="left" height="20px" vspace="20px">
+  <a href="#">This is a sample scrolling text that has scrolls texts to left.</a>
+  <a href="#">This is a sample scrolling text that has scrolls texts to left.</a>
+</marquee>
+
+
+<div class="ann_not">
+  <div class="card">
+    <h3>Announcement</h3>
+    <div class="inner_cards">
+      <div class="d_t">
+        <div class="date_icon">
+          <div class="month">JUN</div>
+          <div class="day">23</div>
+        </div>
+        <div class="t_text">
+          <h4 style="margin: 0px 0px 10px 0px;">sample text 2</h4>
+          <h6 style="margin: 0px 0px 10px 0px;  font-weight: lighter;">date & time</h6>
+        </div>
+      </div>
+      <div class="d_t">
+        <div class="date_icon">
+          <div class="month">JUN</div>
+          <div class="day">23</div>
+        </div>
+        <div class="t_text">
+          <h4 style="margin: 0px 0px 10px 0px;">sample text 2</h4>
+          <h6 style="margin: 0px 0px 10px 0px;  font-weight: lighter;">date & time</h6>
+        </div>
+      </div>
+      <div class="d_t">
+        <div class="date_icon">
+          <div class="month">JUN</div>
+          <div class="day">23</div>
+        </div>
+        <div class="t_text">
+          <h4 style="margin: 0px 0px 10px 0px;">sample text 2</h4>
+          <h6 style="margin: 0px 0px 10px 0px;  font-weight: lighter;">date & time</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <h3>Notification</h3>
+    <ul class="inner_cards">
+      <li class="d_t">
+        
+        <div class="t_text">
+          <h4 style="margin: 0px 0px 10px 0px;">sample text 2</h4>
+          <h6 style="margin: 0px 0px 10px 0px;  font-weight: lighter;">date & time</h6>
+        </div>
+      </li>
+      <li class="d_t">
+        
+        <div class="t_text">
+          <h4 style="margin: 0px 0px 10px 0px;">sample text 2</h4>
+          <h6 style="margin: 0px 0px 10px 0px;  font-weight: lighter;">date & time</h6>
+        </div>
+      </li>
+      <li class="d_t">
+        <div class="t_text">
+          <h4 style="margin: 0px 0px 10px 0px;">sample text 2</h4>
+          <h6 style="margin: 0px 0px 10px 0px;  font-weight: lighter;">date & time</h6>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<h2 style="width: 100%; text-align: center; margin-top: 50px;">Courses</h2>
+<div class="courses">
+  <div class="course">
+    <h4 style="text-align: center; border: 1px solid rgba(0,0,0,0.1); border-radius: 10px; padding: 10px;">Course</h4>
+    <div class="course_inner">
+      <p>text1</p>
+      <p>text2</p>
+      <p>text3</p>
+      <p>text4</p>
+    </div>
+  </div>
+  <div class="course">
+    <h4 style="text-align: center; border: 1px solid rgba(0,0,0,0.1); border-radius: 10px; padding: 10px;">Course</h4>
+    <div class="course_inner">
+      <p>text1</p>
+      <p>text2</p>
+      <p>text3</p>
+      <p>text4</p>
+    </div>
+  </div>
+  <div class="course">
+    <h4 style="text-align: center; border: 1px solid rgba(0,0,0,0.1); border-radius: 10px; padding: 10px;">Course</h4>
+    <div class="course_inner">
+      <p>text1</p>
+      <p>text2</p>
+      <p>text3</p>
+      <p>text4</p>
+    </div>
+  </div>
+  <div class="course">
+    <h4 style="text-align: center; border: 1px solid rgba(0,0,0,0.1); border-radius: 10px; padding: 10px;">Course</h4>
+    <div class="course_inner">
+      <p>text1</p>
+      <p>text2</p>
+      <p>text3</p>
+      <p>text4</p>
+    </div>
+  </div>
+  <div class="course">
+    <h4 style="text-align: center; border: 1px solid rgba(0,0,0,0.1); border-radius: 10px; padding: 10px;">Course</h4>
+    <div class="course_inner">
+      <p>text1</p>
+      <p>text2</p>
+      <p>text3</p>
+      <p>text4</p>
+    </div>
+  </div>
+  <div class="course">
+    <h4 style="text-align: center; border: 1px solid rgba(0,0,0,0.1); border-radius: 10px; padding: 10px;">Course</h4>
+    <div class="course_inner">
+      <p>text1</p>
+      <p>text2</p>
+      <p>text3</p>
+      <p>text4</p>
+    </div>
+  </div>
+</div>
+
+<div style="display: flex; justify-content: center; margin: 40px">
+  <button class="button-22" role="button">Download GDA brochure</button>
+</div>
+
+
+<h2 style="width: 100%; text-align: center; margin-top: 50px;">Impact of Gowthami Academy</h2>
+<div class="impact">
+  <div class="vertical" style="min-width: 200px; max-width: 400px;flex-grow: 1"><p>Our student have been selected in various fields like Defence, Army, NDA, Navy, Airforce, etc.</p></div>
+  <div class="photos" style="flex-grow: 8;">
+    <div class="photo">
+      <img src="https://cdn.icon-icons.com/icons2/2468/PNG/512/user_icon_149329.png">
+      <p>Name</p>
+    </div>
+    <div class="photo">
+      <img src="https://cdn.icon-icons.com/icons2/2468/PNG/512/user_icon_149329.png">
+      <p>Name</p>
+    </div>
+    <div class="photo">
+      <img src="https://cdn.icon-icons.com/icons2/2468/PNG/512/user_icon_149329.png">
+      <p>Name</p>
+    </div>
+    <div class="photo">
+      <img src="https://cdn.icon-icons.com/icons2/2468/PNG/512/user_icon_149329.png">
+      <p>Name</p>
+    </div>
+    <div class="photo">
+      <img src="https://cdn.icon-icons.com/icons2/2468/PNG/512/user_icon_149329.png">
+      <p>Name</p>
+    </div>
+    <div class="photo">
+      <img src="https://cdn.icon-icons.com/icons2/2468/PNG/512/user_icon_149329.png">
+      <p>Name</p>
+    </div>
+    <div class="photo">
+      <img src="https://cdn.icon-icons.com/icons2/2468/PNG/512/user_icon_149329.png">
+      <p>Name</p>
+    </div>
+    <div class="photo">
+      <img src="https://cdn.icon-icons.com/icons2/2468/PNG/512/user_icon_149329.png">
+      <p>Name</p>
+    </div>
+    <div class="photo">
+      <img src="https://cdn.icon-icons.com/icons2/2468/PNG/512/user_icon_149329.png">
+      <p>Name</p>
+    </div>
+    <div class="photo">
+      <img src="https://cdn.icon-icons.com/icons2/2468/PNG/512/user_icon_149329.png" >
+      <p>Name</p>
+    </div>
+    <div class="photo">
+      <img src="https://cdn.icon-icons.com/icons2/2468/PNG/512/user_icon_149329.png" >
+      <p>Name</p>
+    </div>
+    <div class="photo">
+      <img src="https://cdn.icon-icons.com/icons2/2468/PNG/512/user_icon_149329.png" >
+      <p>Name</p>
+    </div>
+    <div class="photo">
+      <img src="https://cdn.icon-icons.com/icons2/2468/PNG/512/user_icon_149329.png" >
+      <p>Name</p>
+    </div>
+    
+  </div>
+</div>
+
+
+
+<h2 style="width: 100%; text-align: center; margin-top: 50px;">Why choose Us?</h2>
+<div class="wcu">
+  <div class="wcu_card">
+    <p style="font-weight: bold; text-align:center;">1000+<br>Students</p>
+  </div>
+  <div class="wcu_card">
+    <p style="font-weight: bold; text-align:center;">1000+ <br>Students</p>
+  </div>
+  <div class="wcu_card">
+    <p style="font-weight: bold; text-align:center;">1000+ <br>Students</p>
+  </div>
+  <div class="wcu_card">
+    <p style="font-weight: bold; text-align:center;">1000+ <br>Students</p>
+  </div>
+  <div class="wcu_card">
+    <p style="font-weight: bold; text-align:center;">1000+ <br>Students</p>
+  </div>
+  <div class="wcu_card">
+    <p style="font-weight: bold; text-align:center;">1000+<br> Students</p>
+  </div>
+  <div class="wcu_card">
+    <p style="font-weight: bold; text-align:center;">1000+ <br>Students</p>
+  </div>
+  <div class="wcu_card">
+    <p style="font-weight: bold; text-align:center;">1000+ <br>Students</p>
+  </div>
+</div>
+
+<div class="students_say">
+  <h2 style="width: 100%; text-align: center; margin-top: 50px;">What Our Students Say</h2>
+  <marquee width="100%" direction="left" height="auto" vspace="20px" scrollamount="12" onMouseOver="this.stop()" onMouseOut="this.start()">
+    <div style="display:flex;">
+      <div class="testimonial-box">
+                <!--top------------------------->
+                <div class="box-top">
+                    <!--profile----->
+                    <div class="profile">
+                        <!--img---->
+                        <div class="profile-img">
+                            <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" />
+                        </div>
+                        <!--name-and-username-->
+                        <div class="name-user">
+                            <strong>Liam mendes</strong>
+                            <span>@liammendes</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Exercitationem, quaerat quis? Provident temporibus <br>architecto asperiores nobis maiores nisi a. Quae doloribus<br> ipsum aliquam tenetur voluptates incidunt </p>    
+      </div>
+      <div class="testimonial-box">
+                  <!--top------------------------->
+                  <div class="box-top">
+                      <!--profile----->
+                      <div class="profile">
+                          <!--img---->
+                          <div class="profile-img">
+                              <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" />
+                          </div>
+                          <!--name-and-username-->
+                          <div class="name-user">
+                              <strong>Liam mendes</strong>
+                              <span>@liammendes</span>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>elit. Exercitationem, quaerat quis? Provident temporibus <br>architecto asperiores nobis maiores nisi a. Quae doloribus<br> ipsum aliquam tenetur voluptates incidunt </p>    
+      </div>
+      <div class="testimonial-box">
+                  <!--top------------------------->
+                  <div class="box-top">
+                      <!--profile----->
+                      <div class="profile">
+                          <!--img---->
+                          <div class="profile-img">
+                              <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" />
+                          </div>
+                          <!--name-and-username-->
+                          <div class="name-user">
+                              <strong>Liam mendes</strong>
+                              <span>@liammendes</span>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>elit. Exercitationem, quaerat quis? Provident temporibus <br>architecto asperiores nobis maiores nisi a. Quae doloribus<br> ipsum aliquam tenetur voluptates incidunt </p>    
+      </div>
+      <div class="testimonial-box">
+                  <!--top------------------------->
+                  <div class="box-top">
+                      <!--profile----->
+                      <div class="profile">
+                          <!--img---->
+                          <div class="profile-img">
+                              <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" />
+                          </div>
+                          <!--name-and-username-->
+                          <div class="name-user">
+                              <strong>Liam mendes</strong>
+                              <span>@liammendes</span>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>elit. Exercitationem, quaerat quis? Provident temporibus <br>architecto asperiores nobis maiores nisi a. Quae doloribus<br> ipsum aliquam tenetur voluptates incidunt </p>    
+      </div>
+    </div>
+  </marquee>
+</div>
+
+
+<h2 style="width: 100%; text-align: center; margin-top: 50px;">Frequently Asked Questions</h2>
+<div class="questions_c">
+  <div class="questions">
+    <div class="box" onclick="show_close('q1')">
+      <p class="q">Question1</p>
+      <p id="sq1">▼</p>
+    </div>
+    <div class="box_a" id="q1" style="display:none;">
+      <p>Answer</p>
+    </div>
+    <div class="box" onclick="show_close('q2')">
+      <p class="q">Question2</p>
+      <p id="sq2">▼</p>
+    </div>
+    <div class="box_a" id="q2" style="display:none;">
+      <p>Answer</p>
+    </div>
+    <div class="box" onclick="show_close('q3')">
+      <p class="q">Question3</p>
+      <p id="sq3">▼</p>
+    </div>
+    <div class="box_a" id="q3" style="display:none;">
+      <p>Answer</p>
+    </div>
+  </div>
+</div>
+<script src="{% static 'js/index_.js' %}"></script>
+</body>
+{% endblock %}
