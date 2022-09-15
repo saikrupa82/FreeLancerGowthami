@@ -1,0 +1,362 @@
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.options {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  bottom: 16px;
+  width: 100%;
+}
+
+.btn{
+
+  appearance: button;
+  background-color: #1652F0;
+  border: 1px solid #1652F0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Graphik,-apple-system,system-ui,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  overflow: visible;
+  padding: 12px 16px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: all 80ms ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+}
+
+.btn:disabled {
+  opacity: .5;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:hover {
+  background-color: #0A46E4;
+  border-color: #0A46E4;
+}
+
+.btn:active {
+  background-color: #0039D7;
+  border-color: #0039D7;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.active,{
+  background-color: #717171;
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.ann_not{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.card{
+  margin: 40px;
+  width: 100%;
+  padding: 10px 0px 20px 40px;
+  border-radius: 10px;
+  box-shadow: rgba(90, 145, 145, 0.44) 1px 3px 8px;
+  max-height: 300px;
+}
+.inner_cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+.d_t{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 60px;
+}
+.date_icon{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: rgba(137, 181, 224, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  margin-right: 20px;
+}
+.month{
+  font-size: 12px;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+  border-radius: 5px 5px 0px 0px;
+  background-color: rgba(137, 181, 224, 0.5);
+}
+.day{
+  padding: 5px 10px 5px 10px;
+  border-radius: 0px 0px 5px 5px;
+  text-align: center;
+}
+
+.t_text{
+  height: 100%;
+  flex-direction: column;
+}
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: royalblue; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -2em;
+  margin-right: 1em;
+}
+
+
+.courses{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  gap : 40px;
+  padding: 30px 100px 30px 100px;
+}
+.course{
+  display: flex;
+  flex-direction: column;
+}
+.course_inner{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap : 10px;
+  text-align: center;
+  justify-self: center;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+.button-22 {
+
+  appearance: button;
+  background-color: #0276FF;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: "RM Neue",sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  padding: 10px 21px;
+  text-align: center;
+  text-transform: none;
+  transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-22:active {
+  background-color: #006AE8;
+}
+
+.button-22:hover {
+  background-color: #1C84FF;
+}
+
+.impact{
+  display: flex;
+  align-items: stretch;
+  padding: 10px 50px 10px 50px;
+}
+.photos{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  padding: 10px;
+  gap : 20px;
+  padding: 30px;
+}
+.photo{
+  margin: 10px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  width: 90px;
+}
+.photo>p{
+  font-size: 12px;
+}
+.photo>img{
+  width: 50px;
+  height: 70px;
+
+}
+
+.vertical{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wcu{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 10px;
+  gap : 50px;
+
+  padding: 30px 100px 30px 100px;
+}
+.wcu_card{
+  justify-self: center;
+  min-height: 150px;
+  min-width: 180px;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.students_say{
+  width: 100%;
+  height: auto;
+  padding: 40px;
+}
+
+.testimonial-box{
+    width:500px;
+    height: auto;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.profile-img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+.name-user span{
+    color: #979797;
+    font-size: 0.8rem;
+}
+.questions_c{
+  width: 100%;
+  height: auto;
+  padding: 0 20% 0 20%;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+.questions{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.box,.box_a{
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 20px;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.box_a{
+  margin-top: 5px;
+}

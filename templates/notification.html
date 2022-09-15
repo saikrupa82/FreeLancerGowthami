@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<body>
+  <link rel="stylesheet" href="{% static 'css/index_notification.css' %}">
+    <div class="title">
+        <a href="#" class="btn"><span>{{title}}</span></a>
+    </div>
+    {% if sub_category %}
+    <div class="category">
+      <a href="#" class="btn2" onclick="setcat('army')"><span>army</span></a>
+      <a href="#" class="btn2" onclick="setcat('navy')"><span>navy</span></a>
+      <a href="#" class="btn2" onclick="setcat('airforce')"><span>airforce</span></a>
+      <a href="#" class="btn2" onclick="setcat('paramilitary')"><span>paramilitary</span></a>
+      <a href="#" class="btn2" onclick="setcat('other')"><span>other</span></a>
+    </div>
+    {% endif %}
+    <div class="notis" id="notifications">
+      <div class="box head">
+        <p style="flex-grow: 8;">Notification</p>
+        <p style="flex-grow: 1;">Start date</p>
+        <p style="flex-grow: 1;">End date</p>
+      </div>
+      <div class="box">
+        <p style="flex-grow: 8;">This is a sample text of notidicatrion</p>
+        <p style="flex-grow: 1;">23/08/2022</p>
+        <p style="flex-grow: 1;">25/08/2022</p>
+      </div>
+      <div class="box">
+        <p style="flex-grow: 8;">This is a sample text of notidicatrion</p>
+        <p style="flex-grow: 1;">23/08/2022</p>
+        <p style="flex-grow: 1;">25/08/2022</p>
+      </div>
+      <div class="box">
+        <p style="flex-grow: 8;">This is a sample text of notidicatrion</p>
+        <p style="flex-grow: 1;">23/08/2022</p>
+        <p style="flex-grow: 1;">25/08/2022</p>
+      </div>
+    </div>
+    <div class="pagination" id="pagination">
+      
+    </div>
+</body>
+
+<!-- <script src="{% static 'js/script_notification.js' %}"></script> -->
+<script>
+  var notis_string  = "{{ notis }}";
+  var notis_string = notis_string.replace(/(&quot\;)/g,'\"');
+  var notis = JSON.parse(notis_string);
+
+  let category = "army";
+let activepg = 0;
+
+setcat("army");
+
+function show(index){
+    let pgold = document.getElementById(`pg${activepg}`);
+    let pgnew = document.getElementById(`pg${index}`);
+    pgold.classList.remove("active");
+    pgnew.classList.add("active");
+    activepg = index;
+    let notifications = notis[category];
+    let noti_html = `<div class="box head">
+    <p style="flex-grow: 8;">Notification</p>
+    <p style="flex-grow: 1;">Start date</p>
+    <p style="flex-grow: 1;">End date</p>
+  </div>`;
+    for(let i=(index*10); i<(index*10)+9;i++){
+      try{
+        noti_html += `<div class="box">
+        <p  style="flex-grow: 8;" herf = "${notifications[i][3]}">${notifications[i][0]}</p>
+        <p style="flex-grow: 1;">${notifications[i][1]}</p>
+        <p style="flex-grow: 1;">${notifications[i][2]}</p>
+      </div>`
+      }
+      catch{break;}
+    }
+    document.getElementById("notifications").innerHTML=noti_html;
+}
+function setcat(cat){
+    category = cat;
+    setpages(cat);
+    show(0);
+}
+
+function setpages(cat){
+  console.log(notis);
+
+  pages = Math.ceil( notis[cat].length/10);
+  let pages_html = `<a onclick="show(${0})" id="pg${0}" class="active" href="#">1</a>`
+  for(let i=2;i<=pages;i++){
+      pages_html += `<a onclick="show(${i-1})" id="pg${i-1}" href="#">${i}</a>`;
+  }
+  document.getElementById("pagination").innerHTML = pages_html;
+}
+
+
+</script>
+{% endblock %}
