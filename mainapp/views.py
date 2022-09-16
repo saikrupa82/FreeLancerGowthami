@@ -37,21 +37,35 @@ def index(request):
     context.update(Selected_candidate)
     return render(request, 'index.html',context)
 
-def results(request):
-    # notice_defence_main = Results.objects.filter(Field_Student='Defence',Image_Student='1')
+def results(request):    
 
-    # notice_Inter_main = Results.objects.filter(Field_Student='Inter',Image_Student='1').last()
+    # def get_json(obj):
+    #     json_text = [obj.Slider_Img,obj.Name_Student,obj.SelectedIN,'{}'.format(obj.Year.year)]
+    #     return json_text
 
-    # print(notice_defence_main[0])
+    
+    # # Defence    
+    # temp=[]
+    # result_defence_main = Results.objects.filter(Field_Student='Defence',Image_Student='1')[0]
+    # temp.append(get_json(result_defence_main))
+    # result_defence = Results.objects.filter(Field_Student='Defence').exclude(id = str(result_defence_main.id))
 
-    # notice_defence = Results.objects.filter(Field_Student='Defence')
-    # notice_Inter = Results.objects.filter(Field_Student='Inter' )
+    # for i in result_defence:
+    #     temp.append(get_json(i))
+    # print(temp)
+    # def_imgs = json.dumps([temp])
+    # print(def_imgs)
 
-    # print(notice_Inter)
-    # notice_defence = Results.objects.filter(Field_Student='Defence').exclude(uuid = notice_defence_main.uuid)
-    # notice_Inter = Results.objects.filter(Field_Student='Inter').exclude(uuid =notice_Inter_main.uuid)
-    # print(notice_Inter)
+    # # Inter
+    # temp=[]
+    # result_Inter_main = Results.objects.filter(Field_Student='Inter',Image_Student='1')[0]
+    # temp.append(get_json(result_Inter_main))
 
+    # result_Inter = Results.objects.filter(Field_Student='Inter' ).exclude(id = str(result_Inter_main.id))
+    # for i in result_Inter:
+    #     temp.append(get_json(i))
+    # inter_imgs = json.dumps([temp])
+    # print(inter_imgs)
     return render(request, 'results.html')
 
 
