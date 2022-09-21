@@ -13,5 +13,4 @@ urlpatterns =[
     path('carrers',views.carrers),
     path('enquiry',views.enquiry),
     
-
 ]
