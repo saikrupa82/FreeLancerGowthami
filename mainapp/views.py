@@ -124,9 +124,27 @@ def notification(request):
     return render(request, 'notification.html', context)
 
 def carrers(request):
+    
+    carrer = Carrer.objects.all()
+    
+   
     context = {
         'sub_category' : 0,
         'title': 'Carrers',
+        'list': carrer,
+    }
+    return render(request, 'notification.html', context)
+
+def announcement(request):
+    
+    announcement = Announcement.objects.all()
+    
+   
+    context = {
+        'sub_category' : 0,
+        'announcement_tab': 1,
+        'title': 'Announcement',
+        'list': announcement,
     }
     return render(request, 'notification.html', context)
 
