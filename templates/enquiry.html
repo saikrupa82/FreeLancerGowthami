@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
@@ -29,36 +28,4 @@
           </div>
     </div>
 </body>
-=======
-{% extends 'base.html' %}
-{% load static %}
-{% block content %}
-<link rel="stylesheet" href="{% static 'css/enquiry.css' %}">
-<body>
-    <div class="title">
-        <a href="#" class="btn"><span>Enquiry Form</span></a>
-    </div>
-    <div class="main">
-        <div class="pic">
-            <h4 style="text-align: center;">Have questions? Dont worry We are here to help</h4>
-            <img style="align-items: center;" src="{% static 'media/enquiry/enq.jpg' %}" width="450" height="350px">
-        </div>
-        <div class="form">
-              <input type="text" id="fname" name="fullnname" placeholder="Full Name..">
-              <input type="text" id="phno" name="phn" placeholder="Phone no">
-              <input type="text" id="mid" name="Emailid" placeholder="Email Id">
-          
-              <select id="course" name="course">
-                <option value="australia">Course 1</option>
-                <option value="canada">CCourse 2</option>
-                <option value="usa">Course 3</option>
-              </select>
-              <input type="text" id="msg" name="msg" placeholder="Message">
-            
-              <input type="submit" value="Submit">
-            
-          </div>
-    </div>
-</body>
->>>>>>> a8b8591f24ac99c12ac59b07afd0af39833fc4f9
 {% endblock %}

@@ -18,24 +18,25 @@
     <div class="notis" id="notifications">
       <div class="box head">
         <p style="flex-grow: 8;">Notification</p>
+        {% if announcement_tab %}
+        <p style="flex-grow: 1;">Posted date</p>
+        {% else %}
         <p style="flex-grow: 1;">Start date</p>
         <p style="flex-grow: 1;">End date</p>
+        {% endif %}
       </div>
+      {% for lst in list %}
       <div class="box">
-        <p style="flex-grow: 8;">This is a sample text of notidicatrion</p>
-        <p style="flex-grow: 1;">23/08/2022</p>
-        <p style="flex-grow: 1;">25/08/2022</p>
+        <p style="flex-grow: 8;"><a href = "{{lst.link}}">{{lst.Text}}</a></p>
+        {% if announcement_tab %}
+        <p style="flex-grow: 1;">{{lst.Date}}</p>
+        {% else %}
+        <p style="flex-grow: 1;">{{lst.from_date}}</p>
+        <p style="flex-grow: 1;">{{lst.end_date}}</p>
+        {% endif %}
+        
       </div>
-      <div class="box">
-        <p style="flex-grow: 8;">This is a sample text of notidicatrion</p>
-        <p style="flex-grow: 1;">23/08/2022</p>
-        <p style="flex-grow: 1;">25/08/2022</p>
-      </div>
-      <div class="box">
-        <p style="flex-grow: 8;">This is a sample text of notidicatrion</p>
-        <p style="flex-grow: 1;">23/08/2022</p>
-        <p style="flex-grow: 1;">25/08/2022</p>
-      </div>
+    {% endfor %}
     </div>
     <div class="pagination" id="pagination">
       
@@ -68,7 +69,7 @@ function show(index){
     for(let i=(index*10); i<(index*10)+9;i++){
       try{
         noti_html += `<div class="box">
-        <p  style="flex-grow: 8;" herf = "${notifications[i][3]}">${notifications[i][0]}</p>
+        <p  style="flex-grow: 8;" href = "${notifications[i][3]}">${notifications[i][0]}</p>
         <p style="flex-grow: 1;">${notifications[i][1]}</p>
         <p style="flex-grow: 1;">${notifications[i][2]}</p>
       </div>`

@@ -33,7 +33,13 @@ class Notification(models.Model):
     end_date = models.DateField()
     SubCategory=models.CharField(max_length=255,choices=CHOICES,editable=True)
 
-
+class Carrer(models.Model):
+    UID=models.AutoField(primary_key=True)
+    Text=models.TextField()
+    link=models.TextField()
+    Date=models.DateField(auto_now_add=True)
+    from_date = models.DateField()
+    end_date = models.DateField()
 
 class Eligility_Conditions(models.Model):
     UID=models.AutoField(primary_key=True)

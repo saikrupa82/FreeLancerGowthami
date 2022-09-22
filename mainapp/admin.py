@@ -8,4 +8,5 @@ admin.site.register(Notification)
 admin.site.register(Eligility_Conditions)
 admin.site.register(Eligility_Conditions_PF_SP)
 admin.site.register(Results)
+admin.site.register(Carrer)
 
