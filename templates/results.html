@@ -22,36 +22,43 @@
 <!-- <script src="{% static 'js/script_results.js' %}"></script> -->
 
 <script>
-  let def_imgs = [["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
-["https://www.w3schools.com/howto/img_avatar.png","name-2","JD-1","2022"],
-["https://www.w3schools.com/howto/img_avatar.png","name-3","JD-1","2022"],
-["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
-["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
-["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
-["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
-["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
-["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
-["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
-["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
-["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
-["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
-["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"]];
+//   let def_imgs = [["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
+// ["https://www.w3schools.com/howto/img_avatar.png","name-2","JD-1","2022"],
+// ["https://www.w3schools.com/howto/img_avatar.png","name-3","JD-1","2022"],
+// ["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
+// ["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
+// ["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
+// ["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
+// ["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
+// ["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
+// ["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
+// ["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
+// ["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
+// ["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
+// ["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"]];
 
-let inter_imgs = [["https://st2.depositphotos.com/1104517/11965/v/950/depositphotos_119659092-stock-illustration-male-avatar-profile-picture-vector.jpg","name-1","JD-1","2022"],
-["https://st2.depositphotos.com/1104517/11965/v/950/depositphotos_119659092-stock-illustration-male-avatar-profile-picture-vector.jpg","name-2","JD-1","2022"],
-["https://www.w3schools.com/howto/img_avatar.png","name-3","JD-1","2022"],
-["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
-["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
-["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
-["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
-["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
-["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
-["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
-["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
-["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
-["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
-["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"]];
+// let inter_imgs = [["https://st2.depositphotos.com/1104517/11965/v/950/depositphotos_119659092-stock-illustration-male-avatar-profile-picture-vector.jpg","name-1","JD-1","2022"],
+// ["https://st2.depositphotos.com/1104517/11965/v/950/depositphotos_119659092-stock-illustration-male-avatar-profile-picture-vector.jpg","name-2","JD-1","2022"],
+// ["https://www.w3schools.com/howto/img_avatar.png","name-3","JD-1","2022"],
+// ["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
+// ["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
+// ["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
+// ["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
+// ["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
+// ["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
+// ["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
+// ["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
+// ["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
+// ["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"],
+// ["https://www.w3schools.com/howto/img_avatar.png","name-1","JD-1","2022"]];
+var def_imgs_string  = "{{ def_imgs }}";
+var def_imgs_string = def_imgs_string.replace(/(&quot\;)/g,'\"');
+var def_imgs = JSON.parse(def_imgs_string);
 
+var inter_imgs_string  = "{{ inter_imgs }}";
+var inter_imgs_string = inter_imgs_string.replace(/(&quot\;)/g,'\"');
+var inter_imgs = JSON.parse(inter_imgs_string);
+console.log("[CURRENT PATH] : ", window.location.pathname,"{ 'MEDIA_ROOT'%}");
 let category="defence";
 
 function setcat(cat){
@@ -60,13 +67,13 @@ function setcat(cat){
     let all_html = ``;
     if(category == "defence"){
         for(let i=0; i<def_imgs.length; i++){
-            all_html += `<button onclick="show(${i})"><img src=${def_imgs[i][0]} width="130px" height="150px"></button>`
+            all_html += `<button onclick="show(${i})"><img src=media/${def_imgs[i][0]} width="130px" height="150px"></button>`
         }
         document.getElementById("all_imgs").innerHTML=all_html;
     }
     else{
         for(let i=0; i<inter_imgs.length; i++){
-            all_html += `<button onclick="show(${i})"><img src=${inter_imgs[i][0]} width="130px" height="150px"></button>`
+            all_html += `<button onclick="show(${i})"><img src=media/${inter_imgs[i][0]} width="130px" height="150px"></button>`
         }
         document.getElementById("all_imgs").innerHTML=all_html;
     }
@@ -75,7 +82,7 @@ function setcat(cat){
 function show(index){
     if(category == "defence"){info=def_imgs[index];}
     else{info=inter_imgs[index];}
-    let img_html = `<img src=${info[0]} width="180px" height="200px" style="margin-right: 50px;"></img>
+    let img_html = `<img src="{{ MEDIA_URL}}${info[0]} " width="180px" height="200px" style="margin-right: 50px;"></img>
     <div class="details" id="details">
         <p>Name : ${info[1]}</p>
         <p>Job pos : ${info[2]}</p>

@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import *
 from django.core import serializers
 import json
+from new_gowthami.settings import  MEDIA_URL,MEDIA_ROOT
 
 # Create your views here.
 
@@ -39,34 +40,41 @@ def index(request):
 
 def results(request):    
 
-    # def get_json(obj):
-    #     json_text = [obj.Slider_Img,obj.Name_Student,obj.SelectedIN,'{}'.format(obj.Year.year)]
-    #     return json_text
+    def get_json(obj):
+        json_text = [str(obj.Slider_Img),obj.Name_Student,obj.SelectedIN,'{}'.format(obj.Year.year)]
+        return json_text
 
     
-    # # Defence    
-    # temp=[]
-    # result_defence_main = Results.objects.filter(Field_Student='Defence',Image_Student='1')[0]
-    # temp.append(get_json(result_defence_main))
-    # result_defence = Results.objects.filter(Field_Student='Defence').exclude(id = str(result_defence_main.id))
+    # Defence    
+    temp=[]
+    result_defence_main = Results.objects.filter(Field_Student='Defence',Image_Student='1')[0]
+    temp.append(get_json(result_defence_main))
+    result_defence = Results.objects.filter(Field_Student='Defence').exclude(id = str(result_defence_main.id))
 
-    # for i in result_defence:
-    #     temp.append(get_json(i))
-    # print(temp)
-    # def_imgs = json.dumps([temp])
-    # print(def_imgs)
+    for i in result_defence:
+        temp.append(get_json(i))
+    print(temp)
+    def_imgs = json.dumps(temp)
+    print(def_imgs)
 
-    # # Inter
-    # temp=[]
-    # result_Inter_main = Results.objects.filter(Field_Student='Inter',Image_Student='1')[0]
-    # temp.append(get_json(result_Inter_main))
+    # Inter
+    temp=[]
+    result_Inter_main = Results.objects.filter(Field_Student='Inter',Image_Student='1')[0]
+    temp.append(get_json(result_Inter_main))
 
-    # result_Inter = Results.objects.filter(Field_Student='Inter' ).exclude(id = str(result_Inter_main.id))
-    # for i in result_Inter:
-    #     temp.append(get_json(i))
-    # inter_imgs = json.dumps([temp])
-    # print(inter_imgs)
-    return render(request, 'results.html')
+    result_Inter = Results.objects.filter(Field_Student='Inter' ).exclude(id = str(result_Inter_main.id))
+    for i in result_Inter:
+        temp.append(get_json(i))
+    inter_imgs = json.dumps(temp)
+    print(inter_imgs)
+
+    context = {
+        'inter_imgs' : inter_imgs,
+        'def_imgs': def_imgs,
+        'MEDIA_URL':MEDIA_URL,
+        'MEDIA_ROOT':MEDIA_ROOT,
+    }
+    return render(request, 'results.html',context)
 
 
 def notification(request):
