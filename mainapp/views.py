@@ -182,5 +182,14 @@ def enquiry(request):
 def base(request):
     return render(request, 'base.html')
     
+def media(request):
+    return render(request, 'media.html')
+
+def gallery(request):
+    return render(request, 'gallery.html')
+
+def courses(request):
+    return render(request, 'courses.html')
+
 def temp(request):
     return render(request, 'temp.html')

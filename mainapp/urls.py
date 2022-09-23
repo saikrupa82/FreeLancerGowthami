@@ -13,5 +13,7 @@ urlpatterns =[
     path('brochure',views.brochure,name="brochure"),
     path('carrers',views.carrers,name="carrers"),
     path('enquiry',views.enquiry),
-    
+    path('media',views.media,name="media"),
+    path('gallery',views.gallery,name="gallery"),
+    path('courses',views.courses,name="courses"),
 ]
