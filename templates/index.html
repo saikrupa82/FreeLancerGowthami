@@ -17,12 +17,12 @@
     <img src="{% static 'media/index/index_1.jpg' %}" style="width:100%">
     <div class="options">
       <button class="btn">Inter</button>
-      <button class="btn">Army</button>
-      <button class="btn">Navy</button>
-      <button class="btn">Air Force</button>
-      <button class="btn">NDA</button>
-      <button class="btn">Paramilitry</button>
-      <button class="btn">State Police</button>
+      <button class="btn"><a href="{% url 'coursesArmy' %}">Army</a></button>
+      <button class="btn"><a href="{% url 'coursessNavy' %}">Navy</a></button>
+      <button class="btn"><a href="{% url 'coursesAirForce' %}">Air Force</a></button>
+      <button class="btn"><a href="{% url 'coursesNDA' %}">NDA</a></button>
+      <button class="btn"><a href="{% url 'coursesStatePolice' %}">Paramilitry</a></button>
+      <button class="btn"><a href="{% url 'coursesParamilitaryForces' %}">State Police</a></button>
     </div>
   </div>
 
@@ -31,12 +31,12 @@
     <img src="{% static 'media/index/index_2.jpg' %}" style="width:100%">
     <div class="options">
       <button class="btn">Inter</button>
-      <button class="btn">Army</button>
-      <button class="btn">Navy</button>
-      <button class="btn">Air Force</button>
-      <button class="btn">NDA</button>
-      <button class="btn">Paramilitry</button>
-      <button class="btn">State Police</button>
+      <button class="btn"><a href="{% url 'coursesArmy' %}">Army</a></button>
+      <button class="btn"><a href="{% url 'coursessNavy' %}">Navy</a></button>
+      <button class="btn"><a href="{% url 'coursesAirForce' %}">Air Force</a></button>
+      <button class="btn"><a href="{% url 'coursesNDA' %}">NDA</a></button>
+      <button class="btn"><a href="{% url 'coursesStatePolice' %}">Paramilitry</a></button>
+      <button class="btn"><a href="{% url 'coursesParamilitaryForces' %}">State Police</a></button>
     </div>
   </div>
 
@@ -45,13 +45,12 @@
     <img src="{% static 'media/index/index_3.jpg' %}" style="width:100%">
     <div class="options">
       <button class="btn">Inter</button>
-      <button class="btn">Army</button>
-      <button class="btn">Navy</button>
-      <button class="btn">Air Force</button>
-      <button class="btn">NDA</button>
-      <button class="btn">Paramilitry</button>
-      <button class="btn">State Police</button>
-      
+      <button class="btn"><a href="{% url 'coursesArmy' %}">Army</a></button>
+      <button class="btn"><a href="{% url 'coursessNavy' %}">Navy</a></button>
+      <button class="btn"><a href="{% url 'coursesAirForce' %}">Air Force</a></button>
+      <button class="btn"><a href="{% url 'coursesNDA' %}">NDA</a></button>
+      <button class="btn"><a href="{% url 'coursesStatePolice' %}">Paramilitry</a></button>
+      <button class="btn"><a href="{% url 'coursesParamilitaryForces' %}">State Police</a></button>
     </div>
   </div>
 
@@ -110,10 +109,10 @@
 
 </div>
 
-<h2 style="width: 100%; text-align: center; margin-top: 50px;">Inter</h2>
+<h2 style="width: 100%; text-align: center; margin-top: 50px;">Course</h2>
 <div class="courses">
   <div class="course">
-    <h4 style="text-align: center; border: 1px solid rgba(0,0,0,0.1); border-radius: 10px; padding: 10px;">Course</h4>
+    <h4 style="text-align: center; border: 1px solid rgba(0,0,0,0.1); border-radius: 10px; padding: 10px;">Inter</h4>
     <div class="course_inner">
       <p>MPC</p>
       <p>BIPC</p>
@@ -123,6 +122,7 @@
   </div>
   <div class="course">
     <h4 style="text-align: center; border: 1px solid rgba(0,0,0,0.1); border-radius: 10px; padding: 10px;">Army</h4>
+    <a href="{% url 'coursesArmy' %}">
     <div class="course_inner">
       <p>Tech</p>
       <p>Engg(SSB)</p>
@@ -131,9 +131,11 @@
       <p>G.D</p>
       <p>T.D</p>
     </div>
+  </a>
   </div>
   <div class="course">
     <h4 style="text-align: center; border: 1px solid rgba(0,0,0,0.1); border-radius: 10px; padding: 10px;">Navy</h4>
+    <a href="{% url 'coursessNavy' %}">
     <div class="course_inner">
       <p>Engg(SSB)</p>
       <p>Naval</p>
@@ -144,9 +146,11 @@
       <p>MR</p>
       <p>NMR</p>
     </div>
+  </a>
   </div>
   <div class="course">
     <h4 style="text-align: center; border: 1px solid rgba(0,0,0,0.1); border-radius: 10px; padding: 10px;">Air Force</h4>
+    <a href="{% url 'coursesAirForce' %}">
     <div class="course_inner">
       <p>Tech group x
         Non Tech</p>
@@ -157,15 +161,20 @@
       <p>Assistant</p>
       <p>NMR</p>
     </div>
+  </a>
   </div>
   <div class="course">
     <h4 style="text-align: center; border: 1px solid rgba(0,0,0,0.1); border-radius: 10px; padding: 10px;">NDA</h4>
+    <a href="{% url 'coursesNDA' %}">
+    
     <div class="course_inner">
       <p>NDA</p>
     </div>
+    </a>
   </div>
   <div class="course">
     <h4 style="text-align: center; border: 1px solid rgba(0,0,0,0.1); border-radius: 10px; padding: 10px;">Paramilitry</h4>
+    <a href="{% url 'coursesParamilitaryForces' %}">
     <div class="course_inner">
       <p>ARAR</p>
       <p>BSF</p>
@@ -174,15 +183,18 @@
       <p>NSG</p>
       <p>SSB</p>
     </div>
+  </a>
   </div>
   <div class="course">
     <h4 style="text-align: center; border: 1px solid rgba(0,0,0,0.1); border-radius: 10px; padding: 10px;">State Police</h4>
+    <a href="{% url 'coursesStatePolice' %}">
     <div class="course_inner">
       <p>Civil</p>
       <p>AR</p>
       <p>TSSP</p>
       <p>TSSP</p>
     </div>
+  </a>
   </div>
 </div>
 

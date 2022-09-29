@@ -1,0 +1,309 @@
+.criteria-container {
+    width: auto;
+    height: auto;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .criteria-pricing {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .criteria-container1 {
+    width: auto;
+    display: flex;
+    padding: var(--dl-space-space-threeunits);
+    max-width: var(--dl-size-size-maxwidth);
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
+  }
+  .criteria-pricing-card {
+    width: 100%;
+    display: flex;
+    max-width: 450px;
+    box-shadow: 2px 2px 10px 0px #cbe8ff;
+    min-height: 450px;
+    transition: 0.3s;
+    align-items: center;
+    border-color: var(--dl-color-primary-100);
+    border-width: 1px;
+    border-radius: var(--dl-radius-radius-radius8);
+    flex-direction: column;
+    background-color: var(--dl-color-gray-white);
+    border-top-width: 0px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+  }
+  .criteria-pricing-card:hover {
+    transform: scale(1.02);
+  }
+  .criteria-text {
+    color: var(--dl-color-gray-white);
+    width: 100%;
+    padding: var(--dl-space-space-oneandhalfunits);
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    border-radius: var(--dl-radius-radius-radius8);
+    margin-bottom: var(--dl-space-space-oneandhalfunits);
+    text-transform: uppercase;
+    background-color: var(--dl-color-decoder-lightblue);
+  }
+  .criteria-container2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .criteria-text01 {
+    color: var(--dl-color-primary-100);
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .criteria-container3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--dl-space-space-unit);
+    flex-direction: column;
+  }
+  .criteria-text02 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .criteria-text03 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .criteria-text04 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .criteria-text05 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .criteria-container4 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .criteria-text06 {
+    color: var(--dl-color-primary-100);
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .criteria-container5 {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--dl-space-space-unit);
+    flex-direction: column;
+  }
+  .criteria-text07 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .criteria-text08 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .criteria-text09 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .criteria-container6 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 0px;
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+    flex-direction: column;
+    padding-bottom: var(--dl-space-space-unit);
+  }
+  .criteria-button {
+    color: var(--dl-color-gray-white);
+    width: 100%;
+    align-self: center;
+    margin-top: auto;
+    text-align: center;
+    padding-top: var(--dl-space-space-unit);
+    border-width: 0px;
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+    padding-bottom: var(--dl-space-space-unit);
+    background-color: var(--dl-color-decoder-lightblue);
+  }
+  
+  
+  
+  
+  
+  
+  
+  @media(max-width: 991px) {
+    .criteria-pricing-card {
+      width: 100%;
+      max-width: 100%;
+      align-items: center;
+    }
+  }
+  @media(max-width: 767px) {
+    .criteria-container1 {
+      flex-flow: column;
+      padding-left: var(--dl-space-space-twounits);
+      padding-right: var(--dl-space-space-twounits);
+    }
+    .criteria-pricing-card {
+      width: 100%;
+      max-width: 450px;
+      align-items: center;
+      margin-right: 0px;
+      margin-bottom: var(--dl-space-space-twounits);
+    }
+  }
+  @media(max-width: 479px) {
+    .criteria-container1 {
+      padding-top: var(--dl-space-space-twounits);
+      padding-left: var(--dl-space-space-unit);
+      padding-right: var(--dl-space-space-unit);
+      padding-bottom: var(--dl-space-space-twounits);
+    }
+  }
+  
+  .state-police1-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+  }
+  .state-police1-container1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .state-police1-container2 {
+    display: flex;
+    transform: skewX(20deg);
+    align-self: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: var(--dl-color-decoder-lightblue);
+  }
+  .state-police1-container3 {
+    display: flex;
+    transform: skewX(-20deg);
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .state-police1-text {
+    color: var(--dl-color-gray-white);
+    font-size: 1rem;
+    padding-top: var(--dl-space-space-halfunit);
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+    padding-bottom: var(--dl-space-space-halfunit);
+  }
+  .state-police1-banner {
+    width: 100%;
+    display: flex;
+    padding: var(--dl-space-space-threeunits);
+    max-width: var(--dl-size-size-maxwidth);
+    align-items: center;
+    justify-content: space-between;
+  }
+  .state-police1-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  .state-police1-container4 {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-left: var(--dl-space-space-sixunits);
+    margin-right: var(--dl-space-space-halfunit);
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .state-police1-text1 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .state-police1-text2 {
+    text-align: justify;
+    margin-right: var(--dl-space-space-threeunits);
+  }
+  .state-police1-container5 {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    border-radius: var(--dl-radius-radius-radius8);
+    flex-direction: column;
+  }
+  .state-police1-container6 {
+    width: auto;
+    display: flex;
+    align-items: flex-start;
+    border-radius: var(--dl-radius-radius-radius8);
+    flex-direction: column;
+    background-color: #d3f2ff;
+  }
+  .state-police1-text3 {
+    color: var(--dl-color-gray-black);
+    width: auto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    padding-top: var(--dl-space-space-halfunit);
+    padding-left: var(--dl-space-space-fiveunits);
+    border-radius: var(--dl-radius-radius-radius8);
+    padding-right: var(--dl-space-space-fiveunits);
+    padding-bottom: var(--dl-space-space-halfunit);
+  }
+  @media(max-width: 991px) {
+    .state-police1-banner {
+      flex-direction: column;
+    }
+    .state-police1-image {
+      width: var(--dl-size-size-xxlarge);
+      height: var(--dl-size-size-xxlarge);
+    }
+    .state-police1-container4 {
+      align-items: center;
+      margin-right: 0px;
+      margin-bottom: var(--dl-space-space-threeunits);
+    }
+    .state-police1-text2 {
+      text-align: center;
+      margin-left: var(--dl-space-space-threeunits);
+    }
+  }
+  @media(max-width: 767px) {
+    .state-police1-banner {
+      padding-left: var(--dl-space-space-twounits);
+      padding-right: var(--dl-space-space-twounits);
+    }
+    .state-police1-text2 {
+      margin-left: var(--dl-space-space-unit);
+      margin-right: var(--dl-space-space-unit);
+    }
+  }
+  @media(max-width: 479px) {
+    .state-police1-banner {
+      padding-top: var(--dl-space-space-twounits);
+      padding-left: var(--dl-space-space-unit);
+      padding-right: var(--dl-space-space-unit);
+      padding-bottom: var(--dl-space-space-twounits);
+    }
+    .state-police1-image {
+      width: var(--dl-size-size-xlarge);
+      height: var(--dl-size-size-xlarge);
+    }
+  }
+  

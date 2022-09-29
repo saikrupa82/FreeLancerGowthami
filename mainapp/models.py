@@ -50,7 +50,7 @@ class Eligility_Conditions(models.Model):
     Qualification = models.CharField(max_length=255)
     Qualification_Percentage = models.CharField(max_length=255)
     Health = models.IntegerField()
-    Chest_Expansion = models.IntegerField()
+    Chest_Expansion = models.CharField(max_length=255)
     Without_glass = models.CharField(max_length=255)
     With_glass = models.CharField(max_length=255)
     Color = models.CharField(max_length=255)
@@ -72,6 +72,7 @@ class Eligility_Conditions_PF_SP(models.Model):
 
 
 # e=Eligility_Conditions(1,'Army', 'Army Engg(only SSB)' ,16,19,'INTER(MPC)',70,157,'5','6/6-6/9','6/6-6/6','CP II')
+# e.save()
 #         e=Eligility_Conditions(2,'Army', 'Army(Tech)' ,17,23,'INTER(MPC)',50,165,'77-82','6/6-6/6','6/6-6/6','CP II')
 #         e=Eligility_Conditions(3,'Army', 'Army(Clerk)' ,17,23,'INTER(ANY GROUP)',50,162,'77-82','6/6-6/6','6/6-6/6','CP II')
 #         e=Eligility_Conditions(4,'Army', 'Army(Nursing)' ,17,23,'INTER(Bi.P.C)',50,165,'77-82','6/6-6/6','6/6-6/6','CP II')
@@ -90,8 +91,10 @@ class Eligility_Conditions_PF_SP(models.Model):
 #         e=Eligility_Conditions(14,'Air Force', 'NON-TECHNICAL GROUP-Y' ,17,21,'INTER(ANY GROUP)',50,152,'5','6/18-6/36','6/9-6/6','CP II')
 #         e=Eligility_Conditions(15,'Air Force', 'AIR GARUDA POLICE' ,17,21,'INTER(MPC)',50,152,'5','6/6-6/9','6/6-6/6','CP II')
 #         e=Eligility_Conditions(16,'Air Force', 'MEDICAL ASSISTANT' ,18,22,'INTER(BiPC)',100,152,'5','6/6-6/9','6/6-6/6','CP II')
+    # e=Eligility_Conditions(17,'NDA', 'NDA' ,16,19,'10+2 PASS/STUDYING', '(PASS)',157,'5','6/6-6/9','6/6-6/6','CP II')
 
-
+            # e=Eligility_Conditions_PF_SP(1,'PARAMILITARY FORCES','AR/BSF/CISF/CRPF/ITBP/NSG/SSB','18-23(OC),18-26(OBC),18-28(SC,ST)','SSC','170cms(OC,OBC),162.5(SC,ST)','50','5cm')
+            # e=Eligility_Conditions_PF_SP(2,'STATE POLICE(CIVIL,AR,TSSP,APSP)','18-23(OC),18-28(BC),18-30(SC,ST)','10+2-PASS(OC/BC),10+2-ATTEND(SC/ST)','167.5cms(OC,BC),162.5(SC,ST)','50','5cm')
         
 
 

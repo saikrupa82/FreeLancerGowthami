@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div>
+    <link href="{% static 'css/course_single.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+    <div class="state-police1-container">
+      <div class="state-police1-container1">
+        <div class="state-police1-container2">
+          <div class="state-police1-container3">
+            <span class="state-police1-text">STATE POLICE</span>
+          </div>
+        </div>
+        <div class="state-police1-banner">
+          <img
+            alt="image"
+            src="https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fG1pbmltYWxpc20lMjB5ZWxsb3d8ZW58MHx8fHwxNjI2MTg0NjU3&amp;ixlib=rb-1.2.1&amp;w=1000"
+            class="state-police1-image"
+          />
+          <div class="state-police1-container4">
+            <h1 class="state-police1-text1">The Origin of vivekananda</h1>
+            <span class="state-police1-text2">
+              Vivekananda Degree College was established in 2005 to promote
+              quality, modem and technical education attend to the needs
+              of changing times under the esteemed management of the Noble Group
+              of Modern institutions. The college strives to provide
+              opportunities to students to realize their potential in curricular
+              and extra curricular activities and actualize their aspirations in
+              life. Our college is named after a great ascetic Swamy Vivekananda,
+              who rocked entire world with his austerity and ever inspiring
+              sayings which still echo in the deep comers of the hearts of the
+              people
+            </span>
+          </div>
+        </div>
+        <div class="state-police1-container5">
+          <div class="state-police1-container6">
+            <span class="state-police1-text3">{{title}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="criteria-container criteria-root-class-name1">
+        <div class="criteria-pricing">
+          <div class="criteria-container1">
+            <div class="criteria-pricing-card">
+              <span class="criteria-text">{{Item.Entry}}</span>
+              <div class="criteria-container2">
+                <span class="criteria-text01">Physical standards</span>
+                <div class="criteria-container3">
+                  <span class="criteria-text02">Age limit - {{Item.Age}} Years</span>
+                  <span class="criteria-text03">
+                    Min Qualification - {{Item.Education}}
+                  </span>
+                  <span class="criteria-text04">Height - {{Item.Height}}</span>
+                  <span class="criteria-text05">Chest Expansion - {{Item.Chest}} </span>
+                </div>
+              </div>
+              <div class="criteria-container4">
+                <span class="criteria-text06">Medical  standards</span>
+                <div class="criteria-container5">
+                  <span class="criteria-text07">Without glasses 6/6 - 6/9</span>
+                  <span class="criteria-text08">With glasses 6/6 - 6/6</span>
+                  <span class="criteria-text09">Color Vision - CP - II</span>
+                </div>
+              </div>
+              <div class="criteria-container6">
+                <button class="criteria-button button">Apply now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock %}

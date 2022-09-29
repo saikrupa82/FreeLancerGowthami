@@ -1,3 +1,4 @@
+from importlib.resources import contents
 from django.shortcuts import render
 from .models import *
 from django.core import serializers
@@ -188,8 +189,84 @@ def media(request):
 def gallery(request):
     return render(request, 'gallery.html')
 
-def courses(request):
-    return render(request, 'courses.html')
+def selected_courses_Inter(request):
+    
+  
+    context = {
+        'title': 'Inter',
+        }
+    return render(request, 'courses.html', context)
+
+def selected_courses_Army(request):
+    
+    Army = Eligility_Conditions.objects.filter(Field= 'Army')
+  
+    context = {
+        'Item': Army,
+        'title': 'Army',
+        }
+    return render(request, 'courses.html', context)
+
+def selected_courses_Navy(request):
+    
+    Navy = Eligility_Conditions.objects.filter(Field= 'Navy')
+  
+    context = {
+        'Item': Navy,
+        'title': 'Navy',
+        }
+    return render(request, 'courses.html', context)
+
+def selected_courses_AirForce(request):
+    
+    AirForce = Eligility_Conditions.objects.filter(Field= 'Air Force')
+
+    context = {
+        'Item':AirForce,
+        'title':'AirForce',
+        }
+    return render(request, 'courses.html', context)
+
+def selected_courses_NDA(request):
+    
+    NDA = Eligility_Conditions.objects.filter(Field= 'NDA')
+  
+    context = {
+        'Item':NDA,
+        'title': 'NDA',
+        }
+    return render(request, 'courses.html', context)
+
+def selected_courses_ParamilitaryForces(request):
+    
+    PARAMILITARY_FORCES =Eligility_Conditions_PF_SP.objects.filter(Field= 'PARAMILITARY FORCES')[0]
+  
+    context = {
+        'Item': PARAMILITARY_FORCES,
+        'title': 'PARAMILITARY FORCES',
+        }
+    return render(request, 'single_course.html', context)
+
+def selected_courses_StatePolice(request):
+    
+    STATE_POLICE = Eligility_Conditions_PF_SP.objects.filter(Field= 'STATE POLICE')[0]
+  
+    context = {
+        'Item': STATE_POLICE,
+        'title': 'STATE_POLICE',
+        }
+    return render(request, 'single_course.html', context)
+
+
+
+def selected_courses(request):
+    STATE_POLICE = Eligility_Conditions_PF_SP.objects.filter(Field= 'STATE POLICE')[0]
+  
+    context = {
+        'Item': STATE_POLICE,
+        'title': 'STATE_POLICE',
+        }
+    return render(request, 'single_course.html',context)
 
 def temp(request):
     return render(request, 'temp.html')

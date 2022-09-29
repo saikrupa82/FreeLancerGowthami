@@ -9,7 +9,7 @@
       <div class="state-police-container1">
         <div class="state-police-container2">
           <div class="state-police-container3">
-            <span class="state-police-text">STATE POLICE</span>
+            <span class="state-police-text">{{title}}</span>
           </div>
         </div>
         <div class="state-police-banner">
@@ -36,38 +36,39 @@
         </div>
         <div class="state-police-container5">
           <div class="state-police-container6">
-            <span class="state-police-text3">STATE POLICE</span>
+            <span class="state-police-text3">{{title}}</span>
           </div>
         </div>
         <div class="state-police-container7">
+          {% for i in Item %}
           <Criteria>
             <div class="criteria-container criteria-root-class-name">
               <div class="criteria-pricing">
                 <div class="criteria-container1">
                   <div class="criteria-pricing-card">
-                    <span class="criteria-text">Army engg(Only ssb)</span>
+                    <span class="criteria-text">{{i.Category}}</span>
                     <div class="criteria-container2">
                       <span class="criteria-text01">Physical standards</span>
                       <div class="criteria-container3">
-                        <span class="criteria-text02">Age limit 16-19 Years</span>
+                        <span class="criteria-text02">Age limit {{i.Age_min}}-{{i.Age_max}} Years</span>
                         <span class="criteria-text03">
-                          Min Qualification - Inter MPC- 70%
+                          Min Qualification - {{i.Qualification}} {% if i.Qualification_Percentage != '0' %}- {{i.Qualification_Percentage}}% {% endif %}
                         </span>
-                        <span class="criteria-text04">Height - 157cm</span>
-                        <span class="criteria-text05">Chest Expansion - 5cm</span>
+                        <span class="criteria-text04">Height - {{i.Health}}cm</span>
+                        <span class="criteria-text05">Chest Expansion - {{i.Chest_Expansion}}cm</span>
                       </div>
                     </div>
                     <div class="criteria-container4">
                       <span class="criteria-text06">Medical  standards</span>
                       <div class="criteria-container5">
                         <span class="criteria-text07">
-                          Without glasses 6/6 - 6/9
+                          Without glasses {{i.Without_glass}}
                         </span>
                         <span class="criteria-text08">
-                          With glasses 6/6 - 6/6
+                          With glasses {{i.With_glass}}
                         </span>
                         <span class="criteria-text09">
-                          Color Vision - CP - II
+                          Color Vision - {{i.Color}}
                         </span>
                       </div>
                     </div>
@@ -79,201 +80,7 @@
               </div>
             </div>
           </Criteria>
-          <Criteria>
-            <div class="criteria-container criteria-root-class-name4">
-              <div class="criteria-pricing">
-                <div class="criteria-container1">
-                  <div class="criteria-pricing-card">
-                    <span class="criteria-text">Army engg(Only ssb)</span>
-                    <div class="criteria-container2">
-                      <span class="criteria-text01">Physical standards</span>
-                      <div class="criteria-container3">
-                        <span class="criteria-text02">Age limit 16-19 Years</span>
-                        <span class="criteria-text03">
-                          Min Qualification - Inter MPC- 70%
-                        </span>
-                        <span class="criteria-text04">Height - 157cm</span>
-                        <span class="criteria-text05">Chest Expansion - 5cm</span>
-                      </div>
-                    </div>
-                    <div class="criteria-container4">
-                      <span class="criteria-text06">Medical  standards</span>
-                      <div class="criteria-container5">
-                        <span class="criteria-text07">
-                          Without glasses 6/6 - 6/9
-                        </span>
-                        <span class="criteria-text08">
-                          With glasses 6/6 - 6/6
-                        </span>
-                        <span class="criteria-text09">
-                          Color Vision - CP - II
-                        </span>
-                      </div>
-                    </div>
-                    <div class="criteria-container6">
-                      <button class="criteria-button button">Apply now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Criteria>
-          <Criteria>
-            <div class="criteria-container criteria-root-class-name3">
-              <div class="criteria-pricing">
-                <div class="criteria-container1">
-                  <div class="criteria-pricing-card">
-                    <span class="criteria-text">Army engg(Only ssb)</span>
-                    <div class="criteria-container2">
-                      <span class="criteria-text01">Physical standards</span>
-                      <div class="criteria-container3">
-                        <span class="criteria-text02">Age limit 16-19 Years</span>
-                        <span class="criteria-text03">
-                          Min Qualification - Inter MPC- 70%
-                        </span>
-                        <span class="criteria-text04">Height - 157cm</span>
-                        <span class="criteria-text05">Chest Expansion - 5cm</span>
-                      </div>
-                    </div>
-                    <div class="criteria-container4">
-                      <span class="criteria-text06">Medical  standards</span>
-                      <div class="criteria-container5">
-                        <span class="criteria-text07">
-                          Without glasses 6/6 - 6/9
-                        </span>
-                        <span class="criteria-text08">
-                          With glasses 6/6 - 6/6
-                        </span>
-                        <span class="criteria-text09">
-                          Color Vision - CP - II
-                        </span>
-                      </div>
-                    </div>
-                    <div class="criteria-container6">
-                      <button class="criteria-button button">Apply now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Criteria>
-          <Criteria>
-            <div class="criteria-container criteria-root-class-name2">
-              <div class="criteria-pricing">
-                <div class="criteria-container1">
-                  <div class="criteria-pricing-card">
-                    <span class="criteria-text">Army engg(Only ssb)</span>
-                    <div class="criteria-container2">
-                      <span class="criteria-text01">Physical standards</span>
-                      <div class="criteria-container3">
-                        <span class="criteria-text02">Age limit 16-19 Years</span>
-                        <span class="criteria-text03">
-                          Min Qualification - Inter MPC- 70%
-                        </span>
-                        <span class="criteria-text04">Height - 157cm</span>
-                        <span class="criteria-text05">Chest Expansion - 5cm</span>
-                      </div>
-                    </div>
-                    <div class="criteria-container4">
-                      <span class="criteria-text06">Medical  standards</span>
-                      <div class="criteria-container5">
-                        <span class="criteria-text07">
-                          Without glasses 6/6 - 6/9
-                        </span>
-                        <span class="criteria-text08">
-                          With glasses 6/6 - 6/6
-                        </span>
-                        <span class="criteria-text09">
-                          Color Vision - CP - II
-                        </span>
-                      </div>
-                    </div>
-                    <div class="criteria-container6">
-                      <button class="criteria-button button">Apply now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Criteria>
-          <Criteria>
-            <div class="criteria-container criteria-root-class-name6">
-              <div class="criteria-pricing">
-                <div class="criteria-container1">
-                  <div class="criteria-pricing-card">
-                    <span class="criteria-text">Army engg(Only ssb)</span>
-                    <div class="criteria-container2">
-                      <span class="criteria-text01">Physical standards</span>
-                      <div class="criteria-container3">
-                        <span class="criteria-text02">Age limit 16-19 Years</span>
-                        <span class="criteria-text03">
-                          Min Qualification - Inter MPC- 70%
-                        </span>
-                        <span class="criteria-text04">Height - 157cm</span>
-                        <span class="criteria-text05">Chest Expansion - 5cm</span>
-                      </div>
-                    </div>
-                    <div class="criteria-container4">
-                      <span class="criteria-text06">Medical  standards</span>
-                      <div class="criteria-container5">
-                        <span class="criteria-text07">
-                          Without glasses 6/6 - 6/9
-                        </span>
-                        <span class="criteria-text08">
-                          With glasses 6/6 - 6/6
-                        </span>
-                        <span class="criteria-text09">
-                          Color Vision - CP - II
-                        </span>
-                      </div>
-                    </div>
-                    <div class="criteria-container6">
-                      <button class="criteria-button button">Apply now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Criteria>
-          <Criteria>
-            <div class="criteria-container criteria-root-class-name5">
-              <div class="criteria-pricing">
-                <div class="criteria-container1">
-                  <div class="criteria-pricing-card">
-                    <span class="criteria-text">Army engg(Only ssb)</span>
-                    <div class="criteria-container2">
-                      <span class="criteria-text01">Physical standards</span>
-                      <div class="criteria-container3">
-                        <span class="criteria-text02">Age limit 16-19 Years</span>
-                        <span class="criteria-text03">
-                          Min Qualification - Inter MPC- 70%
-                        </span>
-                        <span class="criteria-text04">Height - 157cm</span>
-                        <span class="criteria-text05">Chest Expansion - 5cm</span>
-                      </div>
-                    </div>
-                    <div class="criteria-container4">
-                      <span class="criteria-text06">Medical  standards</span>
-                      <div class="criteria-container5">
-                        <span class="criteria-text07">
-                          Without glasses 6/6 - 6/9
-                        </span>
-                        <span class="criteria-text08">
-                          With glasses 6/6 - 6/6
-                        </span>
-                        <span class="criteria-text09">
-                          Color Vision - CP - II
-                        </span>
-                      </div>
-                    </div>
-                    <div class="criteria-container6">
-                      <button class="criteria-button button">Apply now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Criteria>
+          {% endfor %}
         </div>
       </div>
     </div>
