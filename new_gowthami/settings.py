@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os
-
+from django.core.wsgi import get_wsgi_application
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -25,9 +25,8 @@ SECRET_KEY = 'django-insecure-vk^#m)sgb!dwlvsmi36^q1=0suf%xy!(le+=t-^69k#t(8h-co
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = []
-
+WSGI_APPLICATION = 'gowthami.wsgi.application'
+ALLOWED_HOSTS = ["https://gowthami-website1.herokuapp.com/","http://127.0.0.1:8000/"]
 
 # Application definition
 
