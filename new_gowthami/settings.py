@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-vk^#m)sgb!dwlvsmi36^q1=0suf%xy!(le+=t-^69k#t(8h-co
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 WSGI_APPLICATION = 'new_gowthami.wsgi.application'
-ALLOWED_HOSTS = ["https://gowthamidemo.herokuapp.com/","http://127.0.0.1:8000/"]
+ALLOWED_HOSTS = ["https://gowthamidemo.herokuapp.com/","http://127.0.0.1:8000/", '.herokuapp.com']
 
 # Application definition
 
