@@ -27,13 +27,11 @@ SECRET_KEY = 'django-insecure-vk^#m)sgb!dwlvsmi36^q1=0suf%xy!(le+=t-^69k#t(8h-co
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 WSGI_APPLICATION = 'new_gowthami.wsgi.application'
-ALLOWED_HOSTS = ["https://gowthamidemo.herokuapp.com/","http://127.0.0.1:8000/", '.herokuapp.com','.vercel.app']
+ALLOWED_HOSTS = ["https://gowthamidemo.herokuapp.com/","http://127.0.0.1:8000/", '.herokuapp.com','.vercel.app', '.now.sh']
 
 # Application definition
 
 INSTALLED_APPS = [
-    'whitenoise.runserver_nostatic',
-    'django.contrib.staticfiles',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -44,8 +42,6 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
- 'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -129,13 +125,11 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
 
 MEDIA_URL = '/media/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 django_heroku.settings(locals())
+
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
